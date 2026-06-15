@@ -1,0 +1,146 @@
+{
+  "C": {
+    "name": "C Major",
+    "degrees": [
+      { "degree": "I", "chord": "C" },
+      { "degree": "ii", "chord": "Dm" },
+      { "degree": "iii", "chord": "Em" },
+      { "degree": "IV", "chord": "F" },
+      { "degree": "V", "chord": "G" },
+      { "degree": "vi", "chord": "Am" },
+      { "degree": "vii°", "chord": "Bdim" }
+    ]
+  },
+  "G": {
+    "name": "G Major",
+    "degrees": [
+      { "degree": "I", "chord": "G" },
+      { "degree": "ii", "chord": "Am" },
+      { "degree": "iii", "chord": "Bm" },
+      { "degree": "IV", "chord": "C" },
+      { "degree": "V", "chord": "D" },
+      { "degree": "vi", "chord": "Em" },
+      { "degree": "vii°", "chord": "F#dim" }
+    ]
+  },
+  "D": {
+    "name": "D Major",
+    "degrees": [
+      { "degree": "I", "chord": "D" },
+      { "degree": "ii", "chord": "Em" },
+      { "degree": "iii", "chord": "F#m" },
+      { "degree": "IV", "chord": "G" },
+      { "degree": "V", "chord": "A" },
+      { "degree": "vi", "chord": "Bm" },
+      { "degree": "vii°", "chord": "C#dim" }
+    ]
+  },
+  "A": {
+    "name": "A Major",
+    "degrees": [
+      { "degree": "I", "chord": "A" },
+      { "degree": "ii", "chord": "Bm" },
+      { "degree": "iii", "chord": "C#m" },
+      { "degree": "IV", "chord": "D" },
+      { "degree": "V", "chord": "E" },
+      { "degree": "vi", "chord": "F#m" },
+      { "degree": "vii°", "chord": "G#dim" }
+    ]
+  },
+  "E": {
+    "name": "E Major",
+    "degrees": [
+      { "degree": "I", "chord": "E" },
+      { "degree": "ii", "chord": "F#m" },
+      { "degree": "iii", "chord": "G#m" },
+      { "degree": "IV", "chord": "A" },
+      { "degree": "V", "chord": "B" },
+      { "degree": "vi", "chord": "C#m" },
+      { "degree": "vii°", "chord": "D#dim" }
+    ]
+  },
+  "F": {
+    "name": "F Major",
+    "degrees": [
+      { "degree": "I", "chord": "F" },
+      { "degree": "ii", "chord": "Gm" },
+      { "degree": "iii", "chord": "Am" },
+      { "degree": "IV", "chord": "Bb" },
+      { "degree": "V", "chord": "C" },
+      { "degree": "vi", "chord": "Dm" },
+      { "degree": "vii°", "chord": "Edim" }
+    ]
+  },
+  "Am": {
+    "name": "A Minor",
+    "degrees": [
+      { "degree": "i", "chord": "Am" },
+      { "degree": "ii°", "chord": "Bdim" },
+      { "degree": "III", "chord": "C" },
+      { "degree": "iv", "chord": "Dm" },
+      { "degree": "v", "chord": "Em" },
+      { "degree": "VI", "chord": "F" },
+      { "degree": "VII", "chord": "G" }
+    ]
+  },
+  "Em": {
+    "name": "E Minor",
+    "degrees": [
+      { "degree": "i", "chord": "Em" },
+      { "degree": "ii°", "chord": "F#dim" },
+      { "degree": "III", "chord": "G" },
+      { "degree": "iv", "chord": "Am" },
+      { "degree": "v", "chord": "Bm" },
+      { "degree": "VI", "chord": "C" },
+      { "degree": "VII", "chord": "D" }
+    ]
+  },
+  "Bm": {
+    "name": "B Minor",
+    "degrees": [
+      { "degree": "i", "chord": "Bm" },
+      { "degree": "ii°", "chord": "C#dim" },
+      { "degree": "III", "chord": "D" },
+      { "degree": "iv", "chord": "Em" },
+      { "degree": "v", "chord": "F#m" },
+      { "degree": "VI", "chord": "G" },
+      { "degree": "VII", "chord": "A" }
+    ]
+  },
+  "F#m": {
+    "name": "F# Minor",
+    "degrees": [
+      { "degree": "i", "chord": "F#m" },
+      { "degree": "ii°", "chord": "G#dim" },
+      { "degree": "III", "chord": "A" },
+      { "degree": "iv", "chord": "Bm" },
+      { "degree": "v", "chord": "C#m" },
+      { "degree": "VI", "chord": "D" },
+      { "degree": "VII", "chord": "E" }
+    ]
+  },
+  "C#m": {
+    "name": "C# Minor",
+    "degrees": [
+      { "degree": "i", "chord": "C#m" },
+      { "degree": "ii°", "chord": "D#dim" },
+      { "degree": "III", "chord": "E" },
+      { "degree": "iv", "chord": "F#m" },
+      { "degree": "v", "chord": "G#m" },
+      { "degree": "VI", "chord": "A" },
+      { "degree": "VII", "chord": "B" }
+    ]
+  },
+  "Dm": {
+    "name": "D Minor",
+    "degrees": [
+      { "degree": "i", "chord": "Dm" },
+      { "degree": "ii°", "chord": "Edim" },
+      { "degree": "III", "chord": "F" },
+      { "degree": "iv", "chord": "Gm" },
+      { "degree": "v", "chord": "Am" },
+      { "degree": "VI", "chord": "Bb" },
+      { "degree": "VII", "chord": "C" }
+    ]
+  }
+}
