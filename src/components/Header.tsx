@@ -2,15 +2,25 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header className="border-b border-white/10 bg-black/45 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="group flex items-center gap-3" aria-label="iAccords home">
-          <span className="flex size-9 items-center justify-center rounded-lg border border-green-400/30 bg-green-400/10 text-sm font-semibold text-green-400 shadow-[0_0_24px_rgba(34,197,94,0.16)] transition-colors group-hover:border-green-400/60">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/75 backdrop-blur-2xl">
+      <div className="mx-auto flex h-11 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
+        <Link href="/" className="group flex items-center gap-2" aria-label="iAccords home">
+          <span className="flex size-7 items-center justify-center rounded-md bg-zinc-100 text-[11px] font-semibold text-black transition-colors group-hover:bg-green-400">
             iA
           </span>
-          <span className="text-base font-semibold tracking-normal text-zinc-50">iAccords</span>
+          <span className="text-sm font-medium text-zinc-100">iAccords</span>
         </Link>
-        <span className="hidden text-sm text-zinc-500 sm:inline">Harmony explorer</span>
+        <nav className="hidden items-center gap-7 text-xs text-zinc-400 sm:flex" aria-label="Main navigation">
+          <Link href="/" className="transition-colors hover:text-zinc-100">
+            Explore
+          </Link>
+          <Link href="/key/C" className="transition-colors hover:text-zinc-100">
+            Keys
+          </Link>
+          <Link href="/chord/Am" className="transition-colors hover:text-zinc-100">
+            Chords
+          </Link>
+        </nav>
       </div>
     </header>
   );

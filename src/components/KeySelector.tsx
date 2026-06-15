@@ -20,7 +20,7 @@ export function KeySelector({ keys }: KeySelectorProps) {
   }
 
   return (
-    <div className="flex w-full flex-col gap-3 rounded-lg border border-white/10 bg-zinc-950/70 p-3 shadow-2xl shadow-black/30 sm:max-w-lg sm:flex-row">
+    <div className="apple-surface flex w-full flex-col gap-3 rounded-lg border border-white/10 p-3 sm:max-w-xl sm:flex-row">
       <label className="sr-only" htmlFor="key-selector">
         Select a key
       </label>
@@ -28,7 +28,7 @@ export function KeySelector({ keys }: KeySelectorProps) {
         id="key-selector"
         value={selectedKey}
         onChange={(event) => setSelectedKey(event.target.value)}
-        className="h-12 flex-1 rounded-md border border-white/10 bg-black px-4 text-base font-medium text-zinc-50 outline-none transition-colors hover:border-white/20 focus:border-green-400"
+        className="h-12 flex-1 rounded-md border border-white/10 bg-black/80 px-4 text-base font-medium text-zinc-50 outline-none transition duration-300 hover:border-white/20 focus:border-green-400"
       >
         {keys.map((key) => (
           <option key={key.value} value={key.value}>
@@ -40,7 +40,7 @@ export function KeySelector({ keys }: KeySelectorProps) {
         type="button"
         onClick={exploreKey}
         disabled={isPending}
-        className="h-12 rounded-md bg-green-500 px-5 text-sm font-semibold text-black transition duration-200 hover:bg-green-400 disabled:cursor-wait disabled:bg-green-500/60 sm:min-w-32"
+        className="h-12 rounded-full bg-green-500 px-6 text-sm font-semibold text-black transition duration-300 hover:bg-green-400 disabled:cursor-wait disabled:bg-green-500/60 sm:min-w-36"
       >
         {isPending ? "Loading..." : "Explore"}
       </button>

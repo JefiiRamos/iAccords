@@ -42,10 +42,12 @@ export default async function ChordPage({ params }: ChordPageProps) {
   }
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
-      <section className="space-y-10">
-        <div className="space-y-6">
-          <BackButton />
+    <div className="bg-black">
+      <section className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
+        <div className="soft-reveal space-y-8 text-center">
+          <div className="text-left">
+            <BackButton />
+          </div>
           <SectionTitle
             eyebrow="Chord"
             title={decodedChord}
@@ -53,32 +55,37 @@ export default async function ChordPage({ params }: ChordPageProps) {
           />
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="rounded-lg border border-white/10 bg-zinc-950/70 p-6">
-            <dl className="space-y-7">
+        <div className="soft-reveal-delay mt-12 grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="apple-surface rounded-lg border border-white/10 p-6 sm:p-8">
+            <dl className="grid gap-7">
               <div>
-                <dt className="text-sm font-medium uppercase text-zinc-500">Notes</dt>
-                <dd className="mt-3 flex flex-wrap gap-2">
+                <dt className="text-sm font-semibold text-zinc-500">Notes</dt>
+                <dd className="mt-4 flex flex-wrap gap-2">
                   {chordData.notes.map((note) => (
-                    <span key={note} className="rounded-md border border-green-400/20 bg-green-400/10 px-3 py-2 text-lg font-semibold text-green-300">
+                    <span
+                      key={note}
+                      className="rounded-full bg-green-400 px-4 py-2 text-lg font-semibold text-black"
+                    >
                       {note}
                     </span>
                   ))}
                 </dd>
               </div>
-              <div>
-                <dt className="text-sm font-medium uppercase text-zinc-500">Degree</dt>
-                <dd className="mt-2 font-mono text-2xl text-zinc-50">{chordData.degree}</dd>
-              </div>
-              <div>
-                <dt className="text-sm font-medium uppercase text-zinc-500">Harmonic Function</dt>
-                <dd className="mt-2 text-2xl font-semibold text-zinc-50">{chordData.function}</dd>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-lg bg-black/65 p-5 ring-1 ring-white/10">
+                  <dt className="text-sm font-semibold text-zinc-500">Degree</dt>
+                  <dd className="mt-3 font-mono text-4xl text-zinc-50">{chordData.degree}</dd>
+                </div>
+                <div className="rounded-lg bg-black/65 p-5 ring-1 ring-white/10">
+                  <dt className="text-sm font-semibold text-zinc-500">Function</dt>
+                  <dd className="mt-3 text-3xl font-semibold text-zinc-50">{chordData.function}</dd>
+                </div>
               </div>
             </dl>
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-xl font-semibold text-zinc-50">Common progressions</h2>
+            <h2 className="text-3xl font-semibold text-zinc-50">Common progressions</h2>
             <div className="grid gap-3">
               {progressions.map((progression, index) => (
                 <ProgressionCard key={`${decodedChord}-progression-${index}`} progression={progression} />

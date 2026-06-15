@@ -39,10 +39,12 @@ export default async function KeyPage({ params }: KeyPageProps) {
   }
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
-      <section className="space-y-10">
-        <div className="space-y-6">
-          <BackButton />
+    <div className="bg-black">
+      <section className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
+        <div className="soft-reveal space-y-8 text-center">
+          <div className="text-left">
+            <BackButton />
+          </div>
           <SectionTitle
             eyebrow="Key"
             title={musicKey.name}
@@ -50,7 +52,7 @@ export default async function KeyPage({ params }: KeyPageProps) {
           />
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="soft-reveal-delay mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {musicKey.degrees.map((degree) => (
             <ChordCard key={`${degree.degree}-${degree.chord}`} degree={degree} />
           ))}
