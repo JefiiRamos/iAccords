@@ -1,3 +1,4 @@
+import { InstrumentShowcase } from "@/components/InstrumentShowcase";
 import { KeySelector } from "@/components/KeySelector";
 import { getKeyOptions } from "@/lib/music-data";
 
@@ -16,8 +17,8 @@ export default function Home() {
 
   return (
     <div className="bg-black">
-      <section className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-6xl flex-col items-center justify-center px-5 py-16 text-center sm:px-8">
-        <div className="soft-reveal max-w-5xl space-y-7">
+      <section className="relative mx-auto flex min-h-[calc(100vh-2.75rem)] w-full max-w-6xl flex-col items-center overflow-hidden px-5 pt-14 text-center sm:px-8 sm:pt-20">
+        <div className="soft-reveal z-10 max-w-5xl space-y-6">
           <p className="text-lg font-semibold text-green-400">iAccords</p>
           <h1 className="text-5xl font-semibold text-zinc-50 sm:text-7xl lg:text-8xl">
             Harmony, instantly.
@@ -27,9 +28,11 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="soft-reveal-delay mt-10 flex w-full justify-center">
+        <div className="soft-reveal-delay z-10 mt-8 flex w-full justify-center">
           <KeySelector keys={keys} />
         </div>
+
+        <InstrumentShowcase />
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-5 pb-16 sm:px-8">
